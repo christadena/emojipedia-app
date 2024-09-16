@@ -33,6 +33,11 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+        rules: {
+          "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 80 }],
+          "no-unused-vars": "off", // Example rule to ignore
+        }
+      
     },
   },
 ]

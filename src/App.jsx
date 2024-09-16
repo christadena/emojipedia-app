@@ -22,7 +22,7 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        {emojipedia.map(createEntry)} {/* Mapping through emojipedia */}
+        {emojipedia.map(createEntry)} 
       </dl>
     </div>
   );
