@@ -36,4 +36,11 @@ const emojipedia = [
   },
 ];
 
-export default emojipedia;
+const truncatedEmojipedia = emojipedia.map((emoji) => {
+  return {
+    ...emoji,
+    meaning: emoji.meaning.substring(0, 50) + "...",
+  };
+});
+
+export default truncatedEmojipedia;
